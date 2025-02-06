@@ -26,15 +26,7 @@ example of a gateway with YAML file configurations.
 
 ### 5. User Service
 
-- Manages user-related operations.
-- Supports user creation, retrieval, and storage in a PostgreSQL database.
-- Communicates with other services through the gateway.
-
 ### 6. Notification Service
-
-- Handles notifications for users.
-- Stores notification data in a MongoDB collection.
-- Provides APIs for saving and retrieving notifications.¬
 
 
 - **Spring Boot** for building microservices.
