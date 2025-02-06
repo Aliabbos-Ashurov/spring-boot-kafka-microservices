@@ -24,15 +24,9 @@ example of a gateway with YAML file configurations.
 - Centralized configuration management for microservices.
 - Allows dynamic configuration updates.
 
-### 5. User Service
-
-### 6. Notification Service
-
-
 - **Spring Boot** for building microservices.
-- **Spring Cloud** for service discovery, configuration, and Feign integration.
-- **RabbitMQ** message broker
-- **MongoDB** and **PostgreSQL** as databases.
+- **Spring Cloud** for service discovery, gateway ,configuration, and Feign integration.
+- **Kafka** message broker
 - **Docker** for containerization.
 
 ## Getting Started
