@@ -1,13 +1,13 @@
 package com.abbos.notification.controller;
 
-import com.abbos.notification.dto.NotificationCreateDTO;
+import com.abbos.basedomain.dto.NotificationCreateDTO;
 import com.abbos.notification.dto.NotificationResponseDTO;
-import com.abbos.notification.service.NotificationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Aliabbos Ashurov
@@ -17,10 +17,10 @@ import java.util.List;
 @RequestMapping("/api/v1/notification")
 @RequiredArgsConstructor
 public class NotificationController {
-    private final NotificationService notificationService;
 
     @PostMapping("/save")
     public ResponseEntity<NotificationResponseDTO> save(@RequestBody NotificationCreateDTO dto) {
-        return ResponseEntity.ok(notificationService.save("Hi"));
+        //return ResponseEntity.ok(notificationService.save("Hi"));
+        return null;
     }
 }

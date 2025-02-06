@@ -15,14 +15,12 @@ spring:
     cloud:
       discovery:
         enabled: true
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: admin
-    password: password
-    queue: notification.queue
-    exchange: notification.exchange
-    routingKey: notification.routing.key
+  kafka:
+    bootstrapServers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers: http://localhost:9092
 
 server:
   port: 8081

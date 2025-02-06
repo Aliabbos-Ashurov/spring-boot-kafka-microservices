@@ -5,7 +5,7 @@ example of a gateway with YAML file configurations.
 
 ## Features
 
-### 1. RABBIT MQ 
+### 1. Kafka
 
 - Message broker facilitating communication between the user and the notification service.
 

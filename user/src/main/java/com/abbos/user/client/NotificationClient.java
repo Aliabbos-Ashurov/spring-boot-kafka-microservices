@@ -1,6 +1,6 @@
 package com.abbos.user.client;
 
-import com.abbos.user.dto.NotificationCreateDTO;
+import com.abbos.basedomain.dto.NotificationCreateDTO;
 import com.abbos.user.dto.NotificationResponseDTO;
 import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
 import org.springframework.cloud.openfeign.FeignClient;

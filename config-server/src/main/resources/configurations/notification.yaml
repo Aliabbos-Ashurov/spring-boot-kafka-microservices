@@ -6,14 +6,14 @@ spring:
     cloud:
       discovery:
         enabled: true
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: admin
-    password: password
-    queue: notification.queue
-    exchange: notification.exchange
-    routingKey: notification.routing.key
+  kafka:
+    bootstrapServers: localhost:9092
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+
 eureka:
   client:
     register-with-eureka: true
