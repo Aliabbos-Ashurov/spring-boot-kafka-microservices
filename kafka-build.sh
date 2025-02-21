@@ -3,6 +3,7 @@
 # shellcheck disable=SC2046
 export $(grep -v '^#' .env | xargs)
 
+
 docker run -d \
     --name kafka-container \
     -p ${KAFKA_PORT}:${KAFKA_PORT} \
